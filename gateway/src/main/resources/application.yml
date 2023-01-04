@@ -23,6 +23,8 @@ eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
+    service-url:
+      defaultZone: http://eureka-server.luckytree-zwsm.svc.cluster.local:8761/eureka
 
 # actuator 설정
 management:
