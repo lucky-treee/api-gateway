@@ -19,6 +19,10 @@ spring:
           uri: lb://NOTIFICATION-SERVICE
           predicates:
             - Path=/notification/**
+        - id: shop-service
+          uri: lb://SHOP-SERVICE
+          predicates:
+            - Path=/shop/**
 eureka:
   client:
     register-with-eureka: true
