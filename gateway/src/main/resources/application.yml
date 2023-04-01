@@ -15,10 +15,6 @@ spring:
           uri: lb://MEMBER-SERVICE
           predicates:
             - Path=/member/**
-        - id: notification-service
-          uri: lb://NOTIFICATION-SERVICE
-          predicates:
-            - Path=/notification/**
         - id: shop-service
           uri: lb://SHOP-SERVICE
           predicates:
